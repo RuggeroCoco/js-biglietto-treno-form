@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biglietto treno</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper d-flex justify-content-center align-items-center">
+      <div>
+        <h1 class="text-white mb-4">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="bg-white p-5 rounded">
+          <div class="d-flex justify-content-between">
+            <div class="text-input d-flex flex-column align-items-center">
+              <label for="name" class="text-input-label mb-3"
+                >Nome Cognome</label
+              >
+              <input type="text" id="name" class="rounded text-center" />
+            </div>
+            <div class="text-input d-flex flex-column align-items-center">
+              <label for="distance" class="text-input-label mb-3"
+                >Km da percorrere</label
+              >
+              <input type="text" id="distance" class="rounded text-center" />
+            </div>
+            <div class="text-input d-flex flex-column align-items-center">
+              <label for="distance" class="text-input-label mb-3"
+                >Km da percorrere</label
+              >
+              <select class="rounded" name="age" id="age">
+                <option value="underage">Minorenne</option>
+                <option value="major">Maggiorenne</option>
+                <option value="oldage">Anziano (over 65)</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5">
+            <button class="my-btn me-3 p-1 rounded" id="submit-btn">
+              Genera
+            </button>
+            <button class="my-btn p-1 rounded" id="cancel-btn">Annulla</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
